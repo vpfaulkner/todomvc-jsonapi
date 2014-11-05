@@ -16,7 +16,8 @@ gem 'sqlite3'
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
 # To use Jbuilder templates for JSON
-# gem 'jbuilder'
+gem 'jbuilder'
+gem 'active_model_serializers', '~> 0.8.0'
 
 # Use unicorn as the app server
 # gem 'unicorn'
@@ -33,4 +34,8 @@ group :development, :test do
   gem "binding_of_caller"
   gem "faker"
   gem "pry-rails"
+end
+
+group :test do
+  gem "shoulda"
 end
